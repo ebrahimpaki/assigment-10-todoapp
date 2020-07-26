@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 2px;
+        margin: 2px;
+        box-sizing: border-box;
+    }
+    body {
+        background-color:#fc85ae;
+        color: white;
+        height: 100%;
+        text-align: center;
+    }
+    h1{
+        font-size: 3rem;
+        font-weight: 50;
+        margin: 1rem 0 3rem;
+        color: #fff;
+        text-align: center;
+    }
+    .styling{
+        font-weight: 800;
+        color:lime
+    }
+
+    .btn {
+        background-color: #fff;
+        height: 30px;
+        width: 100px;
+        outline: none;
+        border: none;
+        color: #85203b;
+        margin: 0.25px;
+        background-color: lime;
+        
+        
+    }
+
+    .btn1 {
+        background-color: #fff;
+        height: 30px;
+        width: 80px;
+        outline: none;
+        border: none;
+        color: #85203b;
+        margin: 0.25px;
+        background-color:#107a8b;
+
+     
+    }
+    
+</style>
+
+<body>
+    <h1> <span class = "styling">TODO</span>LIST</h1>
+    <div>
+        <input placeholder="Enter todo" type="text" id="todo-item">
+        <button onclick="addTodo()">ADD ITEM</button>
+
+        <button onclick="deleteAll()">DELETE ALL</button>
+    </div>
+
+
+    <div>
+        <ul id="list">
+        </ul>
+    </div>
+<script src="app.js"></script>
+</body>
+
+</html>
